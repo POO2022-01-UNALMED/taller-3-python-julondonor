@@ -60,5 +60,7 @@ class TV:
     def volumenDown(self):
         if(self._estado and self._volumen >0):
             self._volumen -= 1
-    def setNumTV(self, num):
-        pass
+    
+    @classmethod
+    def setNumTV(cls, num):
+        cls._numTV = num
